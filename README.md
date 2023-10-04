@@ -35,6 +35,9 @@ npm install
 npm run dev 
 ```
 
+> branch를 만들어서 해도 되고 
+> branch 명은 feature/routing-이름 => ex) feature/routing-geonhong
+> fork 떠서 해도 됨
 
 
 
