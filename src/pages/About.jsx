@@ -6,24 +6,6 @@ function About() {
          <AboutLeftNavbar className='sideBar' />
          <div className='content'>
             <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-            <p>This is About page</p>
-
          </div>
          
       </div>

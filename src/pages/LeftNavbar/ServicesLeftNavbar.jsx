@@ -5,9 +5,9 @@ function ServicesLeftNavbar(props) {
       <div className={props.className}>
          <h3>Services</h3>
          <ul>
-            <li>Web Development</li>
-            <li>Mobile Development</li>
-            <li>UI/UX Design</li>
+            <li><a href="#">ServiceLink 1</a></li>
+            <li><a href="#">ServiceLink 2</a></li>
+            <li><a href="#">ServiceLink 3</a></li>
          </ul>
       </div>
    );
