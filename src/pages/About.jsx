@@ -1,8 +1,10 @@
+import AboutLeftNavbar from './LeftNavbar/AboutLeftNavbar';
 
 function About() {
    return (
       <div>
-         <h1>About me</h1>
+         <AboutLeftNavbar />
+         <p>My name is John Doe and I&rsquo;m a web developer.</p>
       </div>
    );
 }

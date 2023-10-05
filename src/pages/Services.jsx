@@ -1,13 +1,15 @@
+import ServicesLeftNavbar from './LeftNavbar/ServicesLeftNavbar';
 
 function Services() {
    return (
       <div>
+         <ServicesLeftNavbar />
          <h1>Our Services</h1>
-         <p>Here are the services we offer:</p>
+         <p>We offer the following services:</p>
          <ul>
-            <li>Service 1</li>
-            <li>Service 2</li>
-            <li>Service 3</li>
+            <li>Web Development</li>
+            <li>Mobile Development</li>
+            <li>UI/UX Design</li>
          </ul>
       </div>
    );

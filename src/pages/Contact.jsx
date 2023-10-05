@@ -1,9 +1,11 @@
-
+import ContactLeftNavbar from './LeftNavbar/ContactLeftNavbar';
 
 function Contact() {
    return (
       <div>
-         <h1>Contact to me </h1>
+         <ContactLeftNavbar />
+         <h1>Contact Us</h1>
+         <p>Feel free to contact us using the information below:</p>
       </div>
    );
 }
