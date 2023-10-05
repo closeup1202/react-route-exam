@@ -1,7 +1,8 @@
 
-function ContactLeftNavbar() {
+function ContactLeftNavbar(props) {
    return (
-      <div>
+      // eslint-disable-next-line react/prop-types
+      <div className={props.className}>
          <h3>Contact</h3>
          <ul>
             <li>Phone</li>

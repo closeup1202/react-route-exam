@@ -1,12 +1,11 @@
-
-function AboutLeftNavbar() {
+function AboutLeftNavbar(props) {
    return (
-      <div>
-         <h3>About</h3>
+      // eslint-disable-next-line react/prop-types
+      <div className={props.className}>
          <ul>
-            <li>Overview</li>
-            <li>History</li>
-            <li>Team</li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
          </ul>
       </div>
    );

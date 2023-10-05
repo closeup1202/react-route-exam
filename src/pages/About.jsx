@@ -3,8 +3,29 @@ import AboutLeftNavbar from './LeftNavbar/AboutLeftNavbar';
 function About() {
    return (
       <div>
-         <AboutLeftNavbar />
-         <p>My name is John Doe and I&rsquo;m a web developer.</p>
+         <AboutLeftNavbar className='sideBar' />
+         <div className='content'>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+            <p>This is About page</p>
+
+         </div>
+         
       </div>
    );
 }

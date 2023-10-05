@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 
-function ServicesLeftNavbar() {
+function ServicesLeftNavbar(props) {
    return (
-      <div>
+      <div className={props.className}>
          <h3>Services</h3>
          <ul>
             <li>Web Development</li>
