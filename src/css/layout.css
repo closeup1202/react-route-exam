@@ -1,0 +1,53 @@
+/* layout.css */
+
+/* Set the height of the body to 100% */
+body {
+   margin: 0;
+   height: 100%;
+}
+
+/* Create a grid container with two rows */
+.container {
+   display: grid;
+   grid-template-columns: 25% 1fr;
+   height: 100%;
+}
+
+/* Style the header */
+.header {
+   background-color: #333;
+   color: #fff;
+   padding: 15px;
+   position: relative;
+}
+
+
+/* Style the main content */
+.main {
+   padding: 10px;
+}
+
+/* Style the sideBar content */
+.sideBar {
+   top: 0px;
+   margin: 0;
+   padding: 0;
+   width: 200px;
+   background-color: #f1f1f1;
+   position: fixed;
+   height: 100%;
+   overflow: auto;
+}
+
+div.content {
+   margin-left: 200px;
+   padding: 1px 16px;
+   height: 100%;
+}
+
+/* Style the footer */
+.footer {
+   background-color: #333;
+   color: #fff;
+   /* padding: 10px; */
+}

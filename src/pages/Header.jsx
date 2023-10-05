@@ -1,0 +1,45 @@
+/* eslint-disable react/prop-types */
+import { useNavigate, useLocation } from 'react-router-dom';
+
+function Header(props) {
+   const navigate = useNavigate();
+   const location = useLocation();
+
+   const handleClick = (path) => {
+      navigate(path);
+   };
+
+   const buttons = [
+      { text: 'Home', path: '/' },
+      { text: 'About', path: '/about' },
+      { text: 'API', path: '/api' },
+      { text: 'Services', path: '/services' },
+   ];
+
+   const navStyle = {
+      position: 'relative',
+      left: location.pathname === '/' ? '0' : '210px',
+   }
+
+   return (
+      <div>
+         <nav style={navStyle}>
+            {buttons.map((button) => {
+               const showButton = location.pathname === button.path;
+               return !showButton && (
+                  // eslint-disable-next-line react/prop-types
+                  <button className={props.className} key={button.path} onClick={() => handleClick(button.path)}>
+                     {button.text}
+                  </button>
+               );
+            })}
+            {/* logined User */}
+            <span >{props.loginedUser}</span>
+         </nav>
+         
+         
+      </div>
+   );
+}
+
+export default Header;
