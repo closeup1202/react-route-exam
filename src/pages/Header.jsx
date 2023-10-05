@@ -1,20 +1,32 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-function Navbar() {
+function Header() {
    const navigate = useNavigate();
+   const location = useLocation();
 
    const handleClick = (path) => {
       navigate(path);
    };
 
+   const buttons = [
+      { text: 'Home', path: '/' },
+      { text: 'About', path: '/about' },
+      { text: 'Contact', path: '/contact' },
+      { text: 'Services', path: '/services' },
+   ];
+
    return (
       <nav>
-         <button onClick={() => handleClick('/')}>Home</button>
-         <button onClick={() => handleClick('/about')}>About</button>
-         <button onClick={() => handleClick('/contact')}>Contact</button>
-         <button onClick={() => handleClick('/services')}>Services</button>
+         {buttons.map((button) => {
+            const showButton = location.pathname === button.path;
+            return !showButton && (
+               <button key={button.path} onClick={() => handleClick(button.path)}>
+                  {button.text}
+               </button>
+            );
+         })}
       </nav>
    );
 }
 
-export default Navbar;
+export default Header;
